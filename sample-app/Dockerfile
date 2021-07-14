@@ -5,4 +5,4 @@ RUN yarn install
 COPY . .
 RUN yarn build
 RUN yarn global add serve
-ENTRYPOINT [ "serve", "-s", "build" ]
+ENTRYPOINT [ "serve", "-l", "80", "-s", "build" ]
